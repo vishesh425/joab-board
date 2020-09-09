@@ -1,0 +1,31 @@
+.container{
+    background-color:  #eee;
+    margin: 16px;
+    padding: 20px;
+}
+.main{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+
+    }
+.box-one{
+    border: 1px solid black;
+}
+.box-two{
+    border: 1px solid black;
+}
+.box-two1{
+    width: 100;
+    background-color: #ddd ;
+}
+img{
+    border-radius: 50%;
+    padding: 18px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.one{
+    display: inline;
+}
+
