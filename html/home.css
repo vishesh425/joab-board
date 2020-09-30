@@ -1,0 +1,226 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ .logo{
+    width: 35%;
+    display: flex; 
+    justify-items: center;
+    align-items: center;
+ } 
+.logo img{
+    width: 45%;
+} 
+.navbar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:sticky;
+    top: 0px;
+    cursor: pointer;
+}
+.nav-list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+margin-left: 12px;
+}
+
+.nav-list,li{
+    list-style: none;
+    padding: 3px 26px;
+        
+}
+.nav-list,li,a{
+    text-decoration: none;
+    margin-left: 17px;
+    color: rgb(21 26 27);
+    font-size: 17px;
+    padding: 5px;
+}
+.nav-list li a:hover{
+    color:#39525a;
+    text-decoration: underline;   
+    border-radius: 25px;
+    background-color: #8f919256;
+}
+.right-Nav a{
+  color:#100f0f;
+}
+.right-Nav a:hover{  
+    background-color: #8f919256;
+}
+.right-Nav{
+    width: 50%;
+    text-align: right;
+    padding: 0 16px;
+}
+.signup {
+     margin: 0px 15px;   
+      padding: 3px 8px;
+     border-radius: 20px;
+     border: 2px solid white;
+     font-size: 12px;
+     vertical-align: middle;
+     cursor: pointer;
+}
+.signin{
+    margin-right:-7px;   
+    padding: 4px 14px;
+   border-radius: 20px;
+   border: 2px solid white;
+   font-size: 12px;
+   vertical-align: middle;
+   cursor: pointer;
+}
+#search{
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 16px;
+        border: azure;
+        outline: none;
+}
+.background-One{
+    /* rgb(80 112 123) */
+    background: rgb(231 235 238);
+    background-size: cover;
+    background-blend-mode: light;
+    height: 8vh;
+    
+}
+.background-Second{
+    
+    background: rgba(0, 0, 0,7)url(pexels-photo-1097930.jpeg);
+    background-size: cover;
+    background-blend-mode: initial;
+    height: 100vh;
+    width: 100vw;
+}
+
+.btn-sm{
+
+        padding: 3px 8px;
+         border-radius: 20px;
+        border: 2px solid white;
+        font-size: 12px;
+        vertical-align: middle;
+        cursor: pointer;
+        outline: none;  
+}
+.box-main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+    
+}
+.first-half{
+   width:80% ;
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+}
+.text-big{
+   font-size: 41px;
+}
+.text-small{
+   font-size: 18px;
+}
+
+
+
+.second-Sec{
+    padding: 12px 12px;
+background-color: khaki;
+border: 2px solid black;
+height: 130vh;
+}
+.second-box{
+    padding: 8px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: 340px 340px ;
+  grid-template-columns: repeat(3,2fr);
+  background-color: red;
+}
+.second-box .box-1{
+  background-color:rgb(68, 68, 128);
+
+}
+.second-box .box-2{
+  background-color:rgb(68, 121, 128);
+
+}
+.second-box .box-3{
+  background-color:rgb(68, 128, 91);
+
+}
+.second-box .box-4{
+  background-color:rgb(107, 128, 68);
+
+}
+.second-box .box-5{
+  background-color:rgb(128, 107, 68);
+
+}
+.second-box .box-6{
+  background-color:rgb(177, 90, 31);
+
+}
+
+
+
+
+
+
+/*start first media query  for 900px*/
+@media (max-width:480px){
+boody{
+    overflow: auto;
+    box-sizing: border-box;
+    width: max-content;
+}
+    .navbar{
+    position: static;
+    height: 20vh;
+}
+.background-One{
+    width: max-content;
+}
+.nav-list{
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    margin-right: 50%;
+}
+.nav-list .logo{
+    left: 40%;
+    position: absolute;
+    width: 50%;
+}
+.nav-list li{
+    display: none;
+}
+.right-Nav{
+    display: none;
+}
+.background-Second{}
+
+.first-half .text-big{
+    font-size: 15px;
+}
+.first-half .text-small{
+    font-size: 10px;
+}
+
+
+
+
+
+
+   

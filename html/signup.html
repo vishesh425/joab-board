@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webhack-SignUp</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: rgb(32, 196, 196);
+            background-size: cover;
+            position: relative;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 10%);
+            width: 400px;
+            height: 530px;
+            padding: 25px 20px;
+            box-sizing: border-box;
+            background: rgba(0, 0, 0, .5);
+        }
+
+        h2 {
+            padding: 0 0 20px;
+        }
+
+        p {
+            font-weight: bold;
+            color: white;
+        }
+
+        .sub-container input {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .sub-container input[type="text"],
+        .sub-container input[type="password"] {
+            border: none;
+            border-bottom: 1px solid black;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        ::placeholder {
+            color: rgba(2565, 255, 255, .5)
+        }
+
+        .sub-container button {
+            border: none;
+            width: 23%;
+            outline: none;
+            height: 40px;
+            font-size: 16px;
+            background-color: #GG267E;
+            border-radius: 20px;
+        }
+
+        .sub-container button:hover {
+            background-color: #efed40;
+            border-bottom: ;
+            color: #262626;
+        }
+
+        span {
+            color: red;
+        }
+
+        /* .sub-container a{
+            display: block;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .loginbox a:hover{
+            color: rgba(14, 243, 224, 0.856);
+            text-decoration: underline;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sign UP</h2>
+        <p>Please fill this for creat an accont</p>
+        <form class="sub-container" action="home.html" onsubmit="return valide()">
+            <p>Name</p>
+            <input type="text" id="Fname" placeholder="First Name">
+            <span  id="fuser"></span>
+            <input type="text" id="Sname" placeholder="Last Name">
+            <span class="" id="suser"></span>
+
+            <p>Email</p>
+            <input type="text" id="email" placeholder="Enter Email">
+            <span class="" id="mail"></span>
+
+            <p>Password</p>
+            <input type="password" id="pass" placeholder="Enter Password">
+            <span class="" id="pas"></span>
+
+            <p> Renter Password</p>
+            <input type="password" id="pass1" placeholder="Renter Password">
+            <span class="" id="pas1"></span>
+
+            <button type="submit">SignUp</button>
+        </form>
+
+        <a href="home.html">cacel</a>
+
+    </div>
+
+
+    <script>
+        function valide() {
+            var fuser = document.getElementById("Fname");
+            var suser = document.getElementById("Sname");
+            var mail = document.getElementById("email");
+            var pass = document.getElementById("pass");
+            var pass1 = document.getElementById("pass1");
+
+            if (fuser.value.trim() == "") {
+                document.getElementById("fuser").innerHTML = "** Please Fill this ";
+                fuser.style.borderBottom = "1px solid red";
+                return false;
+            }
+             else if(fuser.value.trim().length <4||fuser.value.trim().length >15)  {
+               document.getElementById("fuser").innerHTML = "** must be between 4 and 15 ";
+               suser.style.borderBottom = "1px solid red";
+                return false 
+            } /*
+           else if(isNON(fuser)){
+                document.getElementById("fuser").innerHTML = "** only chareton allow ";
+                fuser.style.borderBottom = "1px solid red";
+                return false
+            } */
+
+
+
+
+            else if (suser.value.trim() == "") {
+
+                document.getElementById("suser").innerHTML = "** Please Fill this ";
+                suser.style.borderBottom = "1px solid red";
+                return false;
+            }
+            else if(suser.value.trim().length <4||suser.value.trim().length >15)  {
+               document.getElementById("suser").innerHTML = "** must be between 4 and 15 ";
+               suser.style.borderBottom = "1px solid red";
+                return false 
+            }/*
+           else if(isNON(suser)){
+               document.getElementById("suser").innerHTML = "** only chareton allow ";
+               suser.style.borderBottom = "1px solid red";
+               return false
+           } */
+
+
+
+            else if (mail.value.trim() == "") {
+
+                document.getElementById("mail").innerHTML = "** Please Fill this ";
+                mail.style.borderBottom = "1px solid red";
+                return false;
+            }
+            /*  else if(mail.indexOf('@')<=0){
+                 document.getElementById("mail").innerHTML = "** Email invalid ";
+                 mail.style.borderBottom = "1px solid red";
+                 return false
+             }
+             else   if((mail.charAt(mail.lenght-4)!='.')&&(mail.charAt(mail.lenght-3)!='.')){
+                 document.getElementById("mail").innerHTML = "** Email .. invalid ";
+                 mail.style.borderBottom = "1px solid red";
+                 return false
+             }
+              */
+
+
+            else if (pass.value.trim() == "") {
+
+                document.getElementById("pas").innerHTML = "** Please Fill this ";
+                pass.style.borderBottom = "1px solid red";
+                return false;
+            }
+            else if(pass.value.trim().length <5||pass.value.trim().length >30)  {
+               document.getElementById("pas").innerHTML = "** must be between 4 and 15 ";
+               pass.style.borderBottom = "1px solid red";
+                return false 
+            }
+          /* else if (pass != pass1) {
+                document.getElementById("pas ").innerHTML = "** password not matching ";
+                pass.style.borderBottom = "1px solid red";
+                return false;
+            }
+ */
+            else if (pass1.value.trim() == "") {
+
+                document.getElementById("pas1").innerHTML = "** Please Fill this ";
+                pass1.style.borderBottom = "1px solid red";
+                return false;
+            }
+            else if(pass1.value.trim().length <5||pass1.value.trim().length >30)  {
+               document.getElementById("pas1").innerHTML = "** must be between 4 and 15 ";
+               pass1.style.borderBottom = "1px solid red";
+                return false 
+            }          
+            else {
+                return true;
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

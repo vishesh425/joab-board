@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.logo{
+    width: 20%;
+    display: flex; 
+  
+    justify-items: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.navbar{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:sticky;
+    top: 0px;
+    cursor: pointer;
+}
+.nav-list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list,li{
+    list-style: none;
+    padding: 3px 26px;
+    
+}
+.nav-list,li,a{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+
+}
+a:hover{
+    color:gray;
+    background-color: rgb(244, 245, 240);
+}
+.rightNav{
+    width: 50%;
+    text-align: right;
+    padding: 0 16px;
+}
+#search{
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 16px;
+}
+.btn-sm{
+
+    padding: 3px 8px;
+     border-radius: 20px;
+    border: 2px solid white;
+    font-size: 12px;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+
+.background{
+   background: rgba(0, 0, 0,7)url(ug.jpeg);
+   background-size: cover;
+   background-blend-mode: lighten;
+   height: 20vp;
+}
+h2{
+    margin: 12px 12px;
+    padding: 12px 23px;
+}
+.signup{
+    margin: 0px 15px;   
+     padding: 3px 8px;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 12px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.signin{
+    margin-right:-7px;   
+    padding: 4px 14px;
+   border-radius: 20px;
+   border: 2px solid white;
+   font-size: 12px;
+   vertical-align: middle;
+   cursor: pointer;
+}
